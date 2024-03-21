@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Реєстрація нового користувача</title>
+</head>
+<body background="https://img.freepik.com/premium-photo/summer-fruits-free-area-for-text-high-quality-ai-generated-image-on-white-background_120339-151.jpg?w=740" style="background-size: cover;">
+
+<a class="return-button" href="site.html">Повернутися на головну сторінку!</a>
+<style>
+    .return-button 
+    {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00000040;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+      
+    .return-button:hover 
+    {
+        background-color: #000000;
+    }
+</style>
+
+  <h2>Форма реєстрації нового користувача</h2>
+<form action="feedback_form.html" method="post" enctype="multipart/form-data">
+  <label for="login">Логін:</label><br>
+  <input type="text" id="login" name="login" required><br>
+  <label for="password">Пароль:</label><br>
+  <input type="password" id="password" name="password" required><br>
+  <label for="confirm_password">Підтвердити пароль:</label><br>
+  <input type="password" id="confirm_password" name="confirm_password" required><br>
+  <label for="email">Пошта:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="phone_number">Номер телефону:</label><br>
+  <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Введіть номер у форматі xxx-xxx-xxxx" required><br>
+  <label for="avatar">Аватар:</label><br>
+  <input type="file" id="avatar" name="avatar" accept="image/*"><br>
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">Згода з умовами</label><br>
+  <input type="submit" value="Зареєструватися">
+</form>
+</body>
+</html>
